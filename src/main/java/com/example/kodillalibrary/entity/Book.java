@@ -40,5 +40,6 @@ public class Book {
             mappedBy = "book"
     )
     @LazyCollection(LazyCollectionOption.FALSE)
+    @Builder.Default
     private List<Copy> copies = new ArrayList<>();
 }
